@@ -1,0 +1,62 @@
+/* Background Image */
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    background: url('../assets/images/background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Glassmorphism Card */
+  .login-card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(15px); /* Glassmorphism Effect */
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    width: 400px;
+  }
+  
+  /* Title Style */
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Subtitle Style */
+  p {
+    margin: 10px 0 20px;
+    font-size: 16px;
+    color: #e0e0e0; /* Slightly lighter text */
+  }
+  
+  /* Glassmorphism Button */
+  .google-btn {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent button */
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Hover Effect */
+  .google-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Button Text Alignment */
+  .google-btn i {
+    margin-right: 10px;
+  }
+  
