@@ -21,8 +21,8 @@ const MapComponent = () => {
   const autocompleteRef = useRef();
   const drawingManagerRef = useRef();
 
-  const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: 'AIzaSyBcpEkRrnttWoTnzMXQsgyHU38BnZTxWaQ',
+  const { isLoaded} = useJsApiLoader({
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
     libraries,
   });
 

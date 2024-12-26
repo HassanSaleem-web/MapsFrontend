@@ -16,9 +16,11 @@ const LoginPage = () => {
 
   // Handle Google login
   const handleLogin = async () => {
+    console.log("pressed");
     try {
       const result = await signInWithPopup(auth, provider);
       const { uid, displayName, email, photoURL } = result.user;
+      console.log(result.user);
   
       // Get Firebase authentication token
       const token = await result.user.getIdToken();
