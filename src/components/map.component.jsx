@@ -207,7 +207,7 @@ const MapComponent = () => {
     }));
   
     try {
-      const response = await fetch('http://localhost:5000/api/shapes/saveShapes', {
+      const response = await fetch('https://mapbackend-deh7.onrender.com/api/shapes/saveShapes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, shapes: shapeData, token }),
@@ -250,7 +250,7 @@ const MapComponent = () => {
       console.log(email)
   
       try {
-        const response = await fetch('http://localhost:5000/api/shapes/getShapes', {
+        const response = await fetch('https://mapbackend-deh7.onrender.com/api/shapes/getShapes', {
           method: 'POST', // Use POST instead of GET
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email }), // Send email in the body

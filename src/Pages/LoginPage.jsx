@@ -26,7 +26,7 @@ const LoginPage = () => {
       const token = await result.user.getIdToken();
   
       // Send user data + token to backend for validation
-      const response = await fetch('http://localhost:5000/api/users/saveUser', {
+      const response = await fetch('https://mapbackend-deh7.onrender.com/api/users/saveUser', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
