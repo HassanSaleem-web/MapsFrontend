@@ -21,11 +21,15 @@ const MapComponent = () => {
   const autocompleteRef = useRef();
   const drawingManagerRef = useRef();
 
+  console.log("key", process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
+
+
+
   const { isLoaded} = useJsApiLoader({
-    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries,
   });
-
+  
   const [polygons, setPolygons] = useState([]);
   const [selectedPolygon, setSelectedPolygon] = useState(null);
   const [area, setArea] = useState(0);
